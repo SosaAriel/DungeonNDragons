@@ -41,7 +41,8 @@ main, footer {
     .navbar ul li a, .tirar {
         color: #e10f75;
         text-decoration: none;
-    }
+        display: block;
+    }    
     .navbar ul {
         width: 100%;
         height: 367px;
@@ -50,10 +51,18 @@ main, footer {
         flex-direction: row;
         justify-content: end;
         align-items: end;
-        position: sticky;
+        position: -webkit-sticky;
     }
     .navbar ul li{
+        float: left;
         padding: 3px;
+    }
+    .navbar ul li a:hover {
+        color: #FC0303;
+        transition: 700ms ease;
+    }
+    .navbar ul li:hover ul li {
+        display: block;
     }
     .tirar {
         height: 300px;
@@ -143,6 +152,8 @@ main, footer {
     .mage {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
     }
     .page1 {
         width: 75%;
@@ -151,9 +162,66 @@ main, footer {
         grid-template-columns: repeat(2, 1fr);
         place-content: center center;
         justify-items: end;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
     }
     .pie {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .profesion {
+        display: flex;
+        justify-content: center;
+    }
+    .profesion ul {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profesion ul li {
+        list-style: none;
+    }
+    .profesion ul li a{
+        font-size: 45px;
+        text-decoration: none;
+        color: #FC0303;
+        font-family: 'Aclonica', sans-serif;
+    }
+    .profesion ul li a:hover {
+        text-decoration: underline;
+        background-color: black;
+        color: #FFFFFF;
+        transition: 700ms ease;
+    }
+    .origen {
+        display: flex;
+        justify-content: center;
+    }
+    .origen ul {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .origen ul li {
+        list-style: none;
+    }
+    .origen ul li a{
+        font-size: 45px;
+        text-decoration: none;
+        color: #0602B6;
+        font-family: 'Aclonica', sans-serif;
+    }
+    .origen ul li a:hover {
+        text-decoration: underline;
+        background-color: #FFFFFF;
+        color: black;
+        transition: 700ms ease;
     }
