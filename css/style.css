@@ -20,7 +20,8 @@ font-family: 'Jockey One', sans-serif;
 */
 main, footer {
         background-image: url(../img/fondo2.jpeg);
-        background-size: cover;
+        background-size: auto;
+        
     }
     header {
         background-image: url(../img/banner.png);
@@ -31,8 +32,11 @@ main, footer {
     footer div {
         color: #FC0303;
         font-size: 1rem;
-        text-align: right;
         font-family: 'IM Fell Great Primer SC', serif;
+        display: flex;
+        flex-direction: column;
+        align-content: end;
+        flex-wrap: wrap;
     }
     .navbar {
         display: flex;
@@ -51,7 +55,7 @@ main, footer {
         flex-direction: row;
         justify-content: end;
         align-items: end;
-        position: -webkit-sticky;
+        position: sticky;
     }
     .navbar ul li{
         float: left;
@@ -108,20 +112,42 @@ main, footer {
         font-family: 'Almendra SC', serif;
     }
     .titulo {
+        width: 100%;
         height: 20vh;
+        display: flex;
+        justify-content: center;
     }
     h1 {
         color: #FC0303;
         font-size: 80px;
         font-family: 'IM Fell Great Primer SC', serif;
-        text-align: center;
     }
     h2 {
         color:#0602B6;
         font-size: 80px;
         font-family: 'Hi Melody', cursive;
-        text-align: center;
         margin-bottom: 30px;
+    }
+    h3 {
+        color: #FFFFFF;
+        font-size: 80px;
+        font-family: 'IM Fell Great Primer SC', serif;
+        margin-top: 30px;
+        text-decoration: underline;
+    }
+    h4{
+        color: #FC0303;
+        font-size: 50px;
+        font-family: 'IM Fell Great Primer SC', serif;
+        text-decoration: underline;
+        margin-top: 30px;
+    }
+    h5{
+        color: #FC0303;
+        font-size: 50px;
+        font-family: 'IM Fell Great Primer SC', serif;
+        text-decoration: underline;
+        margin-top: 30px;
     }
     .stats {
         color: #FFFFFF;
@@ -162,14 +188,11 @@ main, footer {
         grid-template-columns: repeat(2, 1fr);
         place-content: center center;
         justify-items: end;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 20px;
     }
     .pie {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     .profesion {
         display: flex;
@@ -224,4 +247,43 @@ main, footer {
         background-color: #FFFFFF;
         color: black;
         transition: 700ms ease;
+    }
+    .tabla {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #FFFFFF;
+        font-family: 'Jockey One', sans-serif;
+    }
+    .encabezado {
+        display: flex;
+        flex-wrap: wrap;
+        color: #0602B6;
+        font-family: 'IM Fell Great Primer SC', serif;
+        font-size: 25px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .recuadro {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .tablaS {
+        display: flex;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .tabla2 {
+        display: flex;
+        justify-content: center;
+    }
+    .tabla3 {
+        display: flex;
+        justify-content: space-evenly;
     }
