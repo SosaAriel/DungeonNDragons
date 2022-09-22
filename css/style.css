@@ -315,9 +315,12 @@ main, footer {
             align-content: center;
             }
         }
-    @media (max-width: 568px){
+    @media (max-width: 568px) {
         header, main, footer{
             background-image: url(../img/aver.jpg)
+        }
+        .vid {
+            display: none;
         }
         h1, h3, h5{
             font-size: 50px;
@@ -346,4 +349,5 @@ main, footer {
             align-content: center;
         }
     }
+
 
